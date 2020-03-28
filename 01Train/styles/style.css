@@ -334,3 +334,173 @@ a  {
 .button-5:hover {
     color: #17c2a4;
 }
+
+/* section 6 */
+
+.sec-6 {
+    background-color: #d74680;
+    height: 1000px;
+}
+
+.inside-6 {
+    padding: 120px 0 40px 0;
+}
+
+.heading-6:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 87px;
+    background-color: #b73c6d;
+    margin: 20px auto 0;
+    z-index: 4;
+}
+
+.block-6 {
+    display: flex;
+    margin: 70px 0 80px 0;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #787878;
+}
+
+.text-6 {
+    max-width: 340px;
+    margin-left: 48px;
+
+}
+
+.frase {
+    font-size: 21px;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.author {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.job-6 {
+    margin: 0;
+    color: #ffdd99;
+}
+
+/* section 7! */
+
+.sec-7 {
+    background-color: #3c5499;
+    height: 820px;
+}
+
+.ins {
+    padding-bottom: 80px;
+}
+.p-7 {
+    max-width: 1000px;
+}
+
+.heading-7:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 87px;
+    background-color: #273a71;
+    margin: 20px auto 0;
+    z-index: 5;
+}
+
+.form_container form {
+    margin: 75px auto;
+    max-width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.name {
+    width: 415px;
+    height: 56px;
+    background-color: #273a71;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.form_container ::placeholder {
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+}
+
+.form_container :focus {
+    outline: none;
+}
+ 
+.area {
+    margin-top: 28px;
+    width: 860px;
+    height: 200px;
+}
+
+textarea {
+    padding-top: 20px;
+}
+
+.send_button {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #30bae7;
+    border-color: #299ec5;
+}
+
+.send_button:hover {
+    background-color: white;
+    color: #30bae7;
+    cursor: pointer;
+}
+
+.last_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+
+.footer {
+    background-color: #344b8e;
+    padding: 45px 0 40px 0;
+}
+
+.foot {
+    width: 940px;
+    margin: 0 auto;
+}
+.foot ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+}
+
+.foot ul a {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    transition: linear 0.2s color;
+}
+
+.foot_link:hover {
+    color: #30bae7;
+}
