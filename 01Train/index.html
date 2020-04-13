@@ -1,317 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Made by Georgy Zemskov -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <meta charset='utf-8'>
+    <meta lang="ru">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Готовим плов</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <a class ="logo" href="." alt="Cuda logo"><img src="./images/logo.png"></a>
-                <nav class="nav">
-                    <a class="nav_link active" href="/home">Home</a>
-                    <a class="nav_link" href="/about">About</a>
-                    <a class="nav_link" href="/work">Work</a>
-                    <a class="nav_link" href="/blog">Blog</a>
-                    <a class="nav_link" href="/contact">Contact</a>
-                </nav>
-            </div>
-        </div> 
-   <section class="intro_sec">
+            <h1>Научись варить плов онлайн.</h1>
+            <h2>Эксперементируй с ингридиентами, чтобы получить самый вкусный в мире плов.</h2>
+        </div>      
+    </header>
+    <section class="section">
         <div class="container">
-            <h2 class="intro_p">Hi there! We are the new kids on the block<br> 
-            and we build awesome websites and mobile apps.</h2>
-            <div>
-                <a href="/contact"><p  class="button">Work with us!</p></a>
+            <div><img class="main_img" src="./images/plov.jpg"></div>
+            <div class="params">
+                <div class="param">
+                    <p class="param_name">Степень готовности:</p>
+                    <div class="scale_outer">
+                        <div id="scale1" class="scale"></div>
+                    </div>
+                </div>
+                <div class="param">
+                    <p class="param_name">Насыщенность:</p>
+                    <div class="scale_outer">
+                        <div id="scale2" class="scale"></div>
+                    </div>
+                </div>
+                <div class="param">
+                    <p class="param_name">Консистенция:</p>
+                    <div class="scale_outer">
+                        <div id="scale3" class="scale"></div>
+                    </div>
+                </div>
+                <div class="param">
+                    <p class="param_name">Сытность:</p>
+                    <div class="scale_outer">
+                        <div id="scale4" class="scale"></div>
+                    </div>
+                </div>
+                <div class="param">
+                    <p class="param_name">Аромат:</p>
+                    <div class="scale_outer">
+                        <div id="scale5" class="scale"></div>
+                    </div>
+                </div>
+                <div class="param">
+                    <p class="param_name">Вкус:</p>
+                    <div class="scale_outer">
+                        <div id="scale6" class="scale"></div>
+                    </div>
+                </div>
+                <div class="param">
+                    <p class="param_name">Цвет:</p>
+                    <div class="scale_outer">
+                        <div id="scale7" class="scale"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    </header>
-
-
-    <section class="sec">
-        <div class="container">
-            <div class="sec_inside">
-                <h2 class="sec_heading">Services we provide</h2>
-                <p class="sec_p">We are working with both individuals
-                    and buisnesses from all over the globe to create 
-                    awesome websites and applications.
-                </p>
-                <div class="section_main">
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/1.png">
-                        </div>
-                        <h3 class="cont_heading">branding</h3>
-                        <p class="cont_descr">Lorem ipsum dolor
-                             sit amet, consectetur adipiscing elit,
-                              sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/2.png">
-                        </div>
-                        <h3 class="cont_heading">design</h3>
-                        <p class="cont_descr">Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit,
-                             sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/3.png">
-                        </div>
-                        <h3 class="cont_heading">development</h3>
-                        <p class="cont_descr">Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit,
-                             sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/4.png">
-                        </div>
-                        <h3 class="cont_heading">rocket science</h3>
-                        <p class="cont_descr">Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit,
-                             sed do eiusmod tempor.</p>
+    <section class="section">
+        <div class="container_ingrs">
+            <div class="width100"><h1 class="ingr_heading">Ингридиенты</h1></div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/rice.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Рис</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(1)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab1">0</p></div>
+                        <botton class="button" onclick="plus(1)"><img src="./images/plus.png"></botton>
                     </div>
                 </div>
             </div>
-        </div> <!-- container-->
-    </section> 
-
-
-    <section class="sec sec-third">
-        <div class="container">
-            <div class="sec_inside">
-                <h2 class="sec_heading heading-3">meet our beautiful team</h2>
-                <p class="sec_p p-3">We are small team of designers and developers,
-                    who help brands with big ideas.
-                </p>
-                <div class="section_main">
-                    <div class="main_content">
-                        <div class="gray_circ"></div>
-                        <h3 class="cont_heading cont_heading-3">Anne Hathaway</h3>
-                        <p class="job">CEO / Marketing Guru</p>
-                        <p class="cont_descr">Lorem ipsum dolor sit amet, consectetur adipiscing
-                             elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>                    
-                        <div class="contacts">
-                            <a class="facebook link" target="_blank" href="http://facebook.com"><img src="./images/contacts_f.png"></a>
-                            <a class="twitter link" target="_blank" href="http://twitter.com"><img src="./images/contacts_t.png"></a>
-                            <a class="linkedin link" target="_blank" href="http://linked.com"><img src="./images/contacts_l.png"></a>
-                            <a class="mail link" target="_blank" href="http://gmail.com"><img src="./images/contacts_g.png"></a>
-                        </div>
-                    </div>
-                    <div class="main_content">
-                        <div class="gray_circ"></div>
-                        <h3 class="cont_heading cont_heading-3">Kate upton</h3>
-                        <p class="job">Creative Director</p>
-                        <p class="cont_descr">Lorem ipsum dolor sit amet, consectetur adipiscing
-                             elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>                    
-                        <div class="contacts">
-                            <a class="twitter link" target="_blank" href="http://twitter.com"><img src="./images/contacts_t.png"></a>
-                            <a class="linkedin link" target="_blank" href="http://linked.com"><img src="./images/contacts_l.png"></a>
-                            <a class="mail link" target="_blank" href="http://gmail.com"><img src="./images/contacts_g.png"></a>
-                        </div>
-                    </div>
-                    <div class="main_content">
-                        <div class="gray_circ"></div>
-                        <h3 class="cont_heading cont_heading-3">Olivia wilde</h3>
-                        <p class="job">Lead Designer</p>
-                        <p class="cont_descr">Lorem ipsum dolor sit amet, consectetur adipiscing
-                             elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>                    
-                        <div class="contacts">
-                            <a class="facebook link" target="_blank" href="http://facebook.com"><img src="./images/contacts_f.png"></a>
-                            <a class="twitter link" target="_blank" href="http://twitter.com"><img src="./images/contacts_t.png"></a>
-                            <a class="linkedin link" target="_blank" href="http://linked.com"><img src="./images/contacts_l.png"></a>
-                            <a class="mail link" target="_blank" href="http://gmail.com"><img src="./images/contacts_g.png"></a>
-                        </div>
-                    </div>
-                    <div class="main_content">
-                        <div class="gray_circ"></div>
-                        <h3 class="cont_heading cont_heading-3">Ashley Greene</h3>
-                        <p class="job">CEO / Developer</p>
-                        <p class="cont_descr">Lorem ipsum dolor sit amet, consectetur adipiscing
-                             elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>                    
-                        <div class="contacts">
-                            <a class="facebook link" target="_blank" href="http://facebook.com"><img src="./images/contacts_f.png"></a>
-                            <a class="twitter link" target="_blank" href="http://twitter.com"><img src="./images/contacts_t.png"></a>
-                            <a class="mail link" target="_blank" href="http://gmail.com"><img src="./images/contacts_g.png"></a>
-                        </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/meat.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Мясо</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(2)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab2">0</p></div>
+                        <botton class="button" onclick="plus(2)"><img src="./images/plus.png"></botton>
                     </div>
                 </div>
-            </div> <!-- sec_inside -->
-        </div> <!-- container -->   
-    </section> <!-- third section -->
-
-
-    <section class="sec sec-4">
-        <div class="container">
-            <div class="sec_inside">
-                <h2 class="sec_heading heading-4">we got skills</h2>
-                <p class="sec_p p-4">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="section_main">
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/skills-1.png">
-                        </div>
-                        <h3 class="cont_heading cont_heading-3">Web design</h3>
-                    </div>
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/skills-2.png">
-                        </div>
-                        <h3 class="cont_heading cont_heading-3">Html / css</h3>
-                    </div>
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/skills-3.png">
-                        </div>
-                        <h3 class="cont_heading cont_heading-3">graphic design</h3>
-                    </div>
-                    <div class="main_content">
-                        <div class="img_in_sec">
-                            <img src="./images/skills-4.png">
-                        </div>
-                        <h3 class="cont_heading cont_heading-3">ui / ux</h3>
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/ukrop.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Укроп</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(3)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab3">0</p></div>
+                        <botton class="button" onclick="plus(3)"><img src="./images/plus.png"></botton>
                     </div>
                 </div>
-            </div> <!-- sec_inside -->
-        </div> <!-- container -->   
-    </section> <!-- fourth section -->
-
-
-    <section class="sec sec-5">
-        <div class="container">
-            <div class="sec_inside">
-                <h2 class="sec_heading heading-5">our portfolio</h2>
-                <p class="sec_p p-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-                    consectetur, adipisci velit, sed quia non numquam
-                </p>
-                <div class="menu">
-                    <a class="mini_button" href="#" alt="all">all</a>
-                    <a class="mini_button" href="#" alt="web">web</a>
-                    <a class="mini_button" href="#" alt="apps">apps</a>
-                    <a class="mini_button" href="#" alt="icons">icons</a>
-                </div>
-                <div class="main_content-5">
-                    <div class="main_content c-5">
-                        <img src="./images/nb-1.png">
-                        <h3 class="cont_heading cont_heading-5">sometric Perspective Mock-Up</h3>
-                    </div>
-                    <div class="main_content c-5">
-                        <img src="./images/nb-2.png">
-                        <h3 class="cont_heading cont_heading-5">Time zone app ui</h3>
-                    </div>
-                    <div class="main_content c-5">
-                        <img src="./images/nb-4.png">
-                        <h3 class="cont_heading cont_heading-5">viro media players ui</h3>
-                    </div>
-                    <div class="main_content c-5">
-                        <img src="./images/nb-3.png">
-                        <h3 class="cont_heading cont_heading-5">blog / magazine flat ui kit</h3>
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/kot.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Кошачья жопа</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(4)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab4">0</p></div>
+                        <botton class="button" onclick="plus(4)"><img src="./images/plus.png"></botton>
                     </div>
                 </div>
-                <div>
-                    <a href="/contact"><p  class="button button-5">Load more projects</p></a>
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/kartoshka.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">5 картошек</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(5)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab5">0</p></div>
+                        <botton class="button" onclick="plus(5)"><img src="./images/plus.png"></botton>
+                    </div>
                 </div>
-            </div> <!-- sec_inside -->
-        </div> <!-- container -->   
-    </section> <!-- fiveth section -->
-
-
-    <section class="sec sec-6">
-        <div class="container">
-            <div class="inside-6">
-                <h2 class="sec_heading heading-6">what people say about us</h2>
-                <p class="sec_p p-6">Our clients love us!</p>
-                <div class="main_content-5">
-                    <div class="block-6">
-                        <div class="photo"></div>
-                        <div class="text-6">
-                            <p class="frase">&Prime;Nullam dapibus blandit orci,
-                                viverra gravida dui lobortis eget. 
-                                Maecenas fringilla urna eu nisl scelerisque.&Prime;</p>
-                            <p class="author">Chanel Iman</p>
-                            <p class="job-6">CEO of Painterest</p>
-                        </div>
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/voshka.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Мандавошка</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(6)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab6">0</p></div>
+                        <botton class="button" onclick="plus(6)"><img src="./images/plus.png"></botton>
                     </div>
-                    <div class="block-6">
-                        <div class="photo"></div>
-                        <div class="text-6">
-                            <p class="frase">&Prime;Vivamus luctus urna sed urna
-                                 ultricies ac tempor dui sagittis.
-                                  In condimentum facilisis po&Prime;</p>
-                            <p class="author">Adriana Lima</p>
-                            <p class="job-6">Founder of Instagram</p>
-                        </div>
-                    </div>
-                    <div class="block-6">
-                        <div class="photo"></div>
-                        <div class="text-6">
-                            <p class="frase">&Prime;Vivamus luctus urna sed urna
-                                ultricies ac tempor dui sagittis.
-                                 In condimentum facilisis po&Prime;</p>
-                            <p class="author">Anne Hathaway</p>
-                            <p class="job-6">Lead Designer at Behance</p>
-                        </div>
-                    </div>
-                    <div class="block-6">
-                        <div class="photo"></div>
-                        <div class="text-6">
-                            <p class="frase">&Prime;Phasellus non purus vel arcu
-                                 tempor commodo. Fusce semper, purus vel luctus
-                                  molestie, risus sem cursus&Prime;</p>
-                            <p class="author">Emma Stone</p>
-                            <p class="job-6">So-founder of Shazam</p>
-                        </div>
-                    </div>
-                </div><!--main_content-5-->
-            </div> <!-- sec_inside -->
-        </div> <!-- container -->   
-    </section> <!-- sixth section -->
-      
-    
-    <section class="sec sec-7">
-        <div class="container">
-            <div class="sec_inside ins">
-                <h2 class="sec_heading heading-7">Get in toch</h2>
-                <p class="sec_p p-7">1600 Pennsylvania Ave NW, Washington,
-                     DC 20500, United States of America. Tel: (202) 456-1111</p>
-                <div class="form_container">
-                    <form method="post">
-                        <input class="name" type="text" required placeholder="Your Name *">
-                        <input class="name" type="email" required placeholder="Your Email *">
-                        <textarea class="name area" type="text" required placeholder="Your Message *"></textarea>
-                    </form>
                 </div>
-                <div class="last_button">
-                    <button action="post" class="button send_button">Send Message</button>
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/vedro.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Ведро воды</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(7)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab7">0</p></div>
+                        <botton class="button" onclick="plus(7)"><img src="./images/plus.png"></botton>
+                    </div>
                 </div>
-            </div> <!-- sec_inside -->
-        </div> <!-- container -->   
-    </section> <!-- seventh section -->
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/hui.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Хуй</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(8)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab8">0</p></div>
+                        <botton class="button" onclick="plus(8)"><img src="./images/plus.png"></botton>
+                    </div>
+                </div>
+            </div>
+            <div class="ingrs_outer">
+                <div class="ingridient">
+                    <img class="ingr_img" src="./images/ohapka.jpg">
+                    <div class="ingr_name"><h2 class="name_ingr">Охапка дров</h2></div>
+                    <div class="screen">
+                        <botton class="button" onclick="minus(9)"><img src="./images/minus.png"></botton>
+                        <div class="tablo"><p id="tab9">0</p></div>
+                        <botton class="button" onclick="plus(9)"><img src="./images/plus.png"></botton>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="reklam"></div>
+    </section>
     <footer class="footer">
         <div class="container">
-            <div class="foot">
+            <div class="links">
                 <ul>
-                    <li><a class="foot_link" href="http://facebook.com" target="_blank">Facebook</a></li>
-                    <li><a class="foot_link" href="http://twitter.com" target="_blank">Twitter</a></li>
-                    <li><a class="foot_link" href="http://google.com" target="_blank">Google+</a></li>
-                    <li><a class="foot_link" href="http://linked.com" target="_blank">LinkedIn</a></li>
-                    <li><a class="foot_link" href="http://behance.net" target="_blank">Behance</a></li>
-                    <li><a class="foot_link" href="http://dribbble.com" target="_blank">Dribbble</a></li>
-                    <li><a class="foot_link" href="http://github.com" target="_blank">GitHub</a></li>
+                    <div><li><a href="https://www.youtube.com/watch?v=dMNYHoKYCJo" target="_blank">Получить подсказку</a></li></div>
+                    <div><li><a href="https://vk.com/gzemskov" target="_blank">Предложить работу</a></li></div>
+                    <div><li><a onclick="showPay()">Поддержать проект</a></li></div>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src='./js/scrypt.js'></script>
 </body>
 </html>
